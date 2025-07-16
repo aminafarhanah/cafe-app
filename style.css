@@ -1,0 +1,76 @@
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f8f5f2;
+    margin: 0;
+    padding: 0;
+}
+nav {
+    background: #8d6748;
+    color: #fff;
+}
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+nav li {
+    margin: 0;
+    padding: 0;
+}
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 1rem 2rem;
+    display: block;
+}
+nav a:hover {
+    background: #644325;
+}
+main {
+    max-width: 600px;
+    margin: 2rem auto;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    padding: 2rem;
+}
+h1, h2 {
+    color: #6b4f36;
+}
+.page {
+    margin-bottom: 2rem;
+}
+label {
+    display: block;
+    margin-bottom: 1rem;
+}
+input[type="number"], select {
+    margin-left: 10px;
+}
+button {
+    background: #8d6748;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+button:hover {
+    background: #6b4f36;
+}
+#orderResult {
+    margin-top: 1rem;
+    color: #388e3c;
+    font-weight: bold;
+}
+@media (max-width: 700px) {
+    main {
+        width: 97vw;
+        padding: 1rem;
+    }
+    nav a {
+        padding: 1rem 1rem;
+    }
+}

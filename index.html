@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cafe App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#" onclick="showPage('home')">Home</a></li>
+            <li><a href="#" onclick="showPage('menu')">Menu</a></li>
+            <li><a href="#" onclick="showPage('order')">Order</a></li>
+            <li><a href="#" onclick="showPage('reviews')">Reviews</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="home" class="page">
+            <h1>Welcome to Cafe Delight!</h1>
+            <p>Your cozy spot for coffee and treats.</p>
+        </section>
+        <section id="menu" class="page" style="display:none;">
+            <h2>Our Menu</h2>
+            <ul>
+                <li>Cappuccino - $3</li>
+                <li>Latte - $3.5</li>
+                <li>Bagel - $2</li>
+                <li>Blueberry Muffin - $2.5</li>
+            </ul>
+        </section>
+        <section id="order" class="page" style="display:none;">
+            <h2>Order Now</h2>
+            <form id="orderForm">
+                <label>
+                    Select item:
+                    <select name="item">
+                        <option value="Cappuccino">Cappuccino</option>
+                        <option value="Latte">Latte</option>
+                        <option value="Bagel">Bagel</option>
+                        <option value="Blueberry Muffin">Blueberry Muffin</option>
+                    </select>
+                </label>
+                <label>
+                    Quantity:
+                    <input type="number" name="quantity" min="1" value="1">
+                </label>
+                <button type="submit">Order</button>
+            </form>
+            <div id="orderResult"></div>
+        </section>
+        <section id="reviews" class="page" style="display:none;">
+            <h2>Customer Reviews</h2>
+            <ul>
+                <li>"Best coffee in town!" - Alex</li>
+                <li>"Love the cozy atmosphere." - Jamie</li>
+                <li>"Muffins are delicious!" - Taylor</li>
+            </ul>
+        </section>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
